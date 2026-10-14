@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إلى أم سند 🤍</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;padding:20px;font-family:Arial,sans-serif;text-align:center;color:#633b46;background:linear-gradient(135deg,#fff0f3,#fce1e8,#fff8f0);min-height:100vh}
+h1,h2{color:#a43d60}
+p{line-height:2}
+button{border:0;border-radius:25px;padding:13px 22px;background:#bd5477;color:white;font-size:16px;cursor:pointer;margin:10px}
+section{max-width:700px;margin:25px auto}
+.card{background:#ffffffd9;padding:22px;margin:18px 0;border-radius:20px;box-shadow:0 5px 20px #b75b741c;text-align:right}
+.hidden{display:none!important}
+.envelope{position:relative;width:210px;height:140px;margin:40px auto;background:#d9859e;border-radius:8px;cursor:pointer;transition:.5s}
+.envelope:before{content:"";position:absolute;inset:0;background:#edb2c3;clip-path:polygon(0 0,50% 55%,100% 0)}
+.envelope:after{content:"♥";position:absolute;top:55px;left:88px;color:white;font-size:35px}
+#memories{animation:appear 1s ease}
+@keyframes appear{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+.photo{border:2px dashed #d99aae;border-radius:15px;padding:15px;margin:12px 0;text-align:center}
+.photo img{width:100%;max-height:350px;object-fit:contain;border-radius:12px;margin-top:12px}
+input[type=file]{max-width:100%;margin-top:12px}
+footer{padding:25px;color:#a43d60}
+</style>
+</head>
+<body>
+
+<section id="home">
+<h1>إلى ملاكي، أم سند 🤍</h1>
+<p>في مفاجأة صغيرة إلك، افتحي الظرف يا روحي 💌</p>
+<div class="envelope" id="envelope"></div>
+<button id="openBtn">افتحي رسالتك ❤️</button>
+</section>
+
+<section id="memories" class="hidden">
+<h1>حكايتنا يا أم سند 💗</h1>
+<p>إلك إنتِ، ولأحلى الذكريات اللي جمعتنا.</p>
+
+<div class="card">
+<h2>💌 رسالة من قلبي إلك</h2>
+<p>يا أم سند، يا ملاكي وروح قلبي 🤍</p>
+<p>أنا عارف إني زعلتك، وخليتك تفكّري بأفكار ومشاعر سيئة بسبب اللي صار، وأنا بتحمّل مسؤولية الموقف كامل. وبوعدك إني أنتبه لتصرّفاتي أكثر، وأتعلّم من غلطتي، وما أكرّر الإشي اللي وجعك، لأن آخر إشي بتمناه بالدنيا إني أكون سبب بزعلك أو وجع قلبك.</p>
+<p>بدي إياكي تعرفي إنك بالنسبة إلي الدنيا وما فيها، إنتِ بكفّة والعالم كلّه بكفّة ثانية. إنتِ من أطيب وأحنّ البنات اللي عرفتهم بحياتي، ومكانتك بقلبي أكبر من أي كلام ممكن أحكيلك إياه. بحبك حب كبير، وبهمّني تكوني معي مرتاحة وآمنة ومطمنة.</p>
+<p>بدي يضل ببالك دايمًا إن يزن بحبك، وبده يشوفك مبسوطة، مش زعلانة بسببه. رح أضل أتعلم كيف أحبك بالطريقة اللي بتستاهليها، وأعطيكي من الحب والاهتمام قد ما بقدر، وأثبتلك بأفعالي قبل كلامي إنك غالية عليّ.</p>
+<p>يا ملاكي، بتمنى أكون سبب ابتسامتك وراحتك، ونبني مع بعض ذكريات أحلى، أساسها الصدق والاحترام والاهتمام.</p>
+<p><strong>بحبك يا أم سند، وإنتِ عندي غالية كثير. 🤍💍</strong></p>
+</div>
+
+<div class="card">
+<h2>📸 صور ذكرياتنا</h2>
+<p>اختار صوركم من تلفونك لتظهر عندك بالصفحة.</p>
+<div class="photo">١٤/٦/٢٠٢٥ — بداية حكايتنا ❤️<input type="file" accept="image/*" onchange="showPhoto(this)"></div>
+<div class="photo">١/١١/٢٠٢٥ — أول مرة شفتك بالمول 🥹<input type="file" accept="image/*" onchange="showPhoto(this)"></div>
+<div class="photo">٢٣/٨/٢٠٢٦ — ذكرى الديت 💗<input type="file" accept="image/*" onchange="showPhoto(this)"></div>
+<div class="photo">١/١٠/٢٠٢٦ — أول حضن دافي 🤍<input type="file" accept="image/*" onchange="showPhoto(this)"></div>
+<div class="photo">١٠/١٠/٢٠٢٦ — الحب والحنان 💞<input type="file" accept="image/*" onchange="showPhoto(this)"></div>
+<div class="photo">٢٧/١٢ — يوم ميلاد ملاكي 🎂<input type="file" accept="image/*" onchange="showPhoto(this)"></div>
+</div>
+
+<div class="card">
+<h2>🎶 أغنية إلك</h2>
+<p>Mutlu Ol Yeter — أغنية بتذكّرني فيكي ❤️</p>
+<button onclick="window.open('https://www.youtube.com/results?search_query=Mutlu+Ol+Yeter','_blank')">اسمعي الأغنية 🎵</button>
+</div>
+
+<div class="card">
+<h2>إلى ذكرياتنا القادمة 💍</h2>
+<p>لسه في أيام وضحكات وصور كثيرة بتستنانا. بتمنى كل ذكرى جديدة نضيفها لحكايتنا تكون أحلى من اللي قبلها.</p>
+<p>بحبك يا ملاكي، يا أم سند ❤️</p>
+</div>
+</section>
+
+<footer>صُنعت بكل الحب ❤️ من يزن إلى أم سند</footer>
+
+<script>
+const openBtn=document.getElementById("openBtn");
+openBtn.addEventListener("click",function(){
+document.getElementById("envelope").style.transform="scale(0.8)";
+openBtn.textContent="بحبك يا أم سند ❤️";
+setTimeout(function(){
+document.getElementById("home").classList.add("hidden");
+document.getElementById("memories").classList.remove("hidden");
+window.scrollTo(0,0);
+},600);
+});
+function showPhoto(input){
+const file=input.files&&input.files[0];
+if(!file)return;
+const reader=new FileReader();
+reader.onload=function(e){
+let img=input.parentElement.querySelector("img");
+if(!img){img=document.createElement("img");img.alt="ذكرى من ذكرياتنا ❤️";input.parentElement.appendChild(img);}
+img.src=e.target.result;
+};
+reader.readAsDataURL(file);
+}
+</script>
+</body>
+</html>
